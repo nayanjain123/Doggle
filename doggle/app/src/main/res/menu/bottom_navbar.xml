@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/bottom_scan"
+        android:icon="@drawable/round_photo_camera_24"
+        android:title="@string/scan" />
+
+    <item
+        android:id="@+id/bottom_breeds"
+        android:icon="@drawable/round_list_24"
+        android:title="@string/breeds" />
+
+    <item
+        android:id="@+id/bottom_favorites"
+        android:icon="@drawable/round_search_24"
+        android:title="@string/finder" />
+
+    <item
+        android:id="@+id/bottom_profile"
+        android:icon="@drawable/round_person_24"
+        android:title="@string/profile" />
+
+
+</menu>

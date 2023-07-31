@@ -1,0 +1,10 @@
+Beagle
+Chihuahua
+Dalmatian
+French_Bulldog
+German_Shepherd
+Golden_Retriever
+Labrador_Retriever
+Pomeranian
+Poodle
+Siberian_Husky

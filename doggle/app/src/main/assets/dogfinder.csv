@@ -1,0 +1,11 @@
+Breeds,Size,Energy,Grooming,Children,Other Pets,Trainability,Exercise,Living Space,Shedding,Allergenic,Breeding Group
+Beagle,Medium,High,Moderate,Yes,Yes,Moderate,Moderate,Apartment,Moderate,No,Hound
+Chihuahua,Small,Moderate,Low,No,No,Low,Low,Apartment,Low,Yes,Toy
+Dalmatian,Large,High,Low,Yes,No,Moderate,High,Spacious,High,No,Non-Sporting
+French_Bulldog,Small,Low,Low,Yes,Yes,Moderate,Low,Apartment,Low,No,Non-Sporting
+German_Shepherd,Large,High,High,Yes,Yes,High,High,Spacious,High,No,Herding
+Golden_Retriever,Large,High,Moderate,Yes,Yes,High,High,Spacious,High,No,Sporting
+Labrador_Retriever,Large,High,Low,Yes,Yes,High,High,Spacious,High,No,Sporting
+Pomeranian,Small,High,Moderate,No,No,Moderate,Moderate,Apartment,High,No,Toy
+Poodle,Small,High,High,Yes,Yes,High,High,Spacious,Low,Yes,Non-Sporting
+Siberian_Husky,Medium,High,Moderate,Yes,No,Moderate,High,Spacious,High,No,Working

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "184801000059",
+    "project_id": "doggle-d6aa0",
+    "storage_bucket": "doggle-d6aa0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184801000059:android:2129a8927ffbf9852f80de",
+        "android_client_info": {
+          "package_name": "com.nayan.doggle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184801000059-4mirkj5srla7kn29bqunt0c6ka0f479o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1WfZw1wHPX4AKzYyIW_s4BWKrcFsKS6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184801000059-4mirkj5srla7kn29bqunt0c6ka0f479o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

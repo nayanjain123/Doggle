@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f0e4"
+    tools:context=".FinderFragment">
+
+    <TextView
+        android:id="@+id/dogfinderlabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/dog_finder"
+        android:textColor="#555151"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dogfinddesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="@string/want_a_dog_let_us_help_you_find_the_perfect_breed_for_you"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogfinderlabel" />
+
+    <ScrollView
+        android:id="@+id/dogquestions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/imagebuttonsbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogfinddesc"
+        app:layout_constraintVertical_bias="0.028">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <!-- Question 1 -->
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/what_size_of_dog_are_you_looking_for"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/smallSize"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="0dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/small"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/mediumSize"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="0dp"
+
+                android:scrollbarSize="4dp"
+                android:text="@string/medium"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/largeSize"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="0dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/large"
+                android:textColor="@color/white" />
+
+            <!-- Question 2 -->
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/how_would_you_describe_your_ideal_dog_s_energy_level"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/lowEnergy"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="0dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/low_calm_and_relaxed"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/mediumEnergy"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="0dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/moderate_playful_and_active"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/highEnergy"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="0dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/high_energetic_and_lively"
+                android:textColor="@color/white" />
+
+            <!-- Question 3 -->
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/how_much_grooming_are_you_willing_to_do"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/lowGrooming"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="0dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/low_minimal_grooming_required"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/mediumGrooming"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="0dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/moderate_regular_grooming_needed"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/highGrooming"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="0dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/high_extensive_grooming_required"
+                android:textColor="@color/white" />
+
+            <!-- Question 4 (Using RadioGroup) -->
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/do_you_have_children_at_home"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:scrollbarSize="4dp">
+
+                <RadioButton
+                    android:id="@+id/yesChildren"
+                    style="@style/WhiteRadioButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="0dp"
+                    android:scrollbarSize="4dp"
+                    android:text="Yes"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/noChildren"
+                    style="@style/WhiteRadioButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="0dp"
+                    android:scrollbarSize="4dp"
+                    android:text="No"
+                    android:textColor="@color/white" />
+
+            </RadioGroup>
+
+            <!-- Question 5 (Using RadioGroup) -->
+            <TextView
+                android:id="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/do_you_have_other_pets_at_home"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:scrollbarSize="4dp">
+
+                <RadioButton
+                    android:id="@+id/yesPets"
+                    style="@style/WhiteRadioButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="0dp"
+                    android:scrollbarSize="4dp"
+                    android:text="@string/yes"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/noPets"
+                    style="@style/WhiteRadioButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="0dp"
+                    android:scrollbarSize="4dp"
+                    android:text="@string/no"
+                    android:textColor="@color/white" />
+
+            </RadioGroup>
+
+            <!-- Question 6 -->
+            <TextView
+                android:id="@+id/question6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/how_trainable_would_you_prefer_your_dog_to_be"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/lowTrain"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/low_not_easily_trainable"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/moderateTrain"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/moderate_some_training_required"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/highTrain"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/high_highly_trainable"
+                android:textColor="@color/white" />
+
+            <!-- Question 7 -->
+            <TextView
+                android:id="@+id/question7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/how_much_exercise_can_you_provide_for_your_dog"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/lowExercise"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/low_limited_exercise"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/moderateExercise"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/moderate_regular_walks_and_playtime"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/highExercise"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/high_frequent_physical_activity_and_exercise"
+                android:textColor="@color/white" />
+
+            <!-- Question 8 (Using RadioGroup) -->
+            <TextView
+                android:id="@+id/question8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/what_type_of_living_space_do_you_have"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:scrollbarSize="4dp">
+
+                <RadioButton
+                    android:id="@+id/apartmentSpace"
+                    style="@style/WhiteRadioButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:scrollbarSize="4dp"
+                    android:text="@string/apartment_limited_outdoor_space"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/spaciousSpace"
+                    style="@style/WhiteRadioButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:scrollbarSize="4dp"
+                    android:text="@string/spacious_yard_plenty_of_outdoor_space"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+            <!-- Question 9 -->
+            <TextView
+                android:id="@+id/question9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/how_much_shedding_are_you_comfortable_with"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/lowShedding"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/low_minimal_shedding"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/moderateShedding"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/moderate_some_shedding"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/highShedding"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/high_significant_shedding"
+                android:textColor="@color/white" />
+
+            <!-- Question 10 (Using RadioGroup) -->
+            <TextView
+                android:id="@+id/question10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/do_you_or_anyone_in_your_household_have_allergies_to_dogs"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:scrollbarSize="4dp">
+
+                <RadioButton
+                    android:id="@+id/yesAllergies"
+                    style="@style/WhiteRadioButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:scrollbarSize="4dp"
+                    android:text="@string/yes_allergies_present"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/noAllergies"
+                    style="@style/WhiteRadioButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:scrollbarSize="4dp"
+                    android:text="@string/no_no_allergies"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+            <!-- Question 11 (Using RadioGroup) -->
+            <TextView
+                android:id="@+id/question11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/which_breed_group_are_you_interested_in"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/houndbreed"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/hound"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/toybreed"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/toy"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/nonsportingbreed"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/non_sporting"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/herdingbreed"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/herding"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/sportingbreed"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/sporting"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/workingbreed"
+                style="@style/WhiteCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/working"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/findbtn"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/resultbg"
+        android:text="@string/find_the_breed"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogquestions" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/resultbg"
+        android:gravity="center"
+        android:text="@string/result"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findbtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
